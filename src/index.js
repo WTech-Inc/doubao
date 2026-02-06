@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const { v4: uuidv4 } = require('uuid');
-const DoubaoAI = require('./doubao-ai');
+const DoubaoAI = require('./doubao');
 
 const app = express();
 
