@@ -12,7 +12,7 @@ const app = express();
 // 中間件
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'cdn')));
+app.use("/cdn", express.static(path.join(__dirname, 'cdn')));
 
 // 速率限制（模仿 OpenAI）
 const limiter = rateLimit({
